@@ -12,7 +12,7 @@ const uploadOnCloud = async (localFilePath) =>{
    if(!localFilePath) return null
    const response = await cloudinary.uploader.upload(
      localFilePath,{
-       resource_type: 'video'
+       resource_type: 'auto'
      }
    )
    console.log("file uploaded at " + response.url)
