@@ -5,7 +5,6 @@ import { connectDb } from "./db/index.js";
 dotenv.configDotenv({
   path: "./.env"
 })
-
 const PORT = process.env.PORT || 8080
 
 connectDb().then(
